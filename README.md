@@ -1,1 +1,94 @@
-# deface-page.html.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hacked by Omega</title>
+  <meta name="description" content="Hacked By T3rr8us P4nk">
+  <meta name="author" content="T3rr8us">
+  <link rel="SHORTCUT ICON" href="http://winhacker.do.am/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #000;
+      padding-bottom: 40px;
+      color: #000;
+      transform: translateZ(-100px);
+      animation: rain 3s infinite linear;
+    }
+
+    @keyframes rain {
+      from { background-position: left 0px; }
+      to { background-position: left 300px; }
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+    }
+
+    @media (max-width: 767px) {
+      .featurette-heading {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <br><br>
+  <div class="featurette">
+    <img src="https://i.gifer.com/7jkI.gif" width="99%" height="200px">
+    <center>
+      <h2 class="featurette-heading">
+        <b>
+          <script>
+            var farbbibliothek = [
+              [
+                "#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000",
+                "#990000", "#880000", "#770000", "#660000", "#550000", "#440000",
+                "#330000", "#220000", "#110000", "#000000", "#110000", "#220000",
+                "#330000", "#440000", "#550000", "#660000", "#770000", "#880000",
+                "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000"
+              ]
+            ];
+            var farben = farbbibliothek[0];
+            var text = " You Have Been Hacked ";
+            function string2array(t) {
+              Buchstabe = t.split("");
+            }
+            function divserzeugen() {
+              for (var i = 0; i < Buchstabe.length; i++) {
+                document.write("<span id='a" + i + "'>" + Buchstabe[i] + "</span>");
+              }
+            }
+            string2array(text);
+            divserzeugen();
+          </script>
+        </b>
+      </h2>
+    </center>
+    <hr width="80%" style="color:black">
+    <div style="background:black; padding:10px;">
+      <b>
+        <center>
+          <font face="Tahoma" size="5" color="red">
+            [
+            <marquee style="width:200px; height:24px;">
+              <font face="Iceland" color="white">
+                Hacked By : <font face="Iceland" color="red">by Omega haha</font>
+              </font>
+            </marquee>
+            ]
+          </font>
+        </center>
+      </b>
+    </div>
+    <p style="font-family:Verdana; font-size:16px; color:red;" align="center">
+      Hello <font color="white">haha</font>
+    </p>
+  </div>
+  <br><br>
+</body>
+</html>
