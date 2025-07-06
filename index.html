@@ -1,346 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacked by Omega777</title>
+    <title>OMEGA404</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #0f0;
+            background-image: url('https://i.gifer.com/5N2g.gif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
-        
-        body {
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            color: #fff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            min-height: 100vh;
-            overflow-x: hidden;
-            position: relative;
-        }
-        
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            width: 80%;
+            margin: 50px auto;
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid #0f0;
             text-align: center;
-            z-index: 10;
-            position: relative;
         }
-        
-        .glitch-effect {
-            font-size: 5rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            position: relative;
-            margin: 2rem 0;
-            text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
-                         -0.05em -0.025em 0 rgba(0,255,0,0.75),
-                         0.025em 0.05em 0 rgba(0,0,255,0.75);
-            animation: glitch 500ms infinite;
-            color: #fff;
+        h1 {
+            color: #f00;
+            text-shadow: 0 0 5px #f00;
         }
-        
-        @keyframes glitch {
-            0% {text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
-                         -0.05em -0.025em 0 rgba(0,255,0,0.75),
-                         0.025em 0.05em 0 rgba(0,0,255,0.75);}
-            14% {text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
-                         -0.05em -0.025em 0 rgba(0,255,0,0.75),
-                         0.025em 0.05em 0 rgba(0,0,255,0.75);}
-            15% {text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.75),
-                         0.025em 0.025em 0 rgba(0,255,0,0.75),
-                         -0.05em -0.05em 0 rgba(0,0,255,0.75);}
-            49% {text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.75),
-                         0.025em 0.025em 0 rgba(0,255,0,0.75),
-                         -0.05em -0.05em 0 rgba(0,0,255,0.75);}
-            50% {text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
-                         0.05em 0 0 rgba(0,255,0,0.75),
-                         0 -0.05em 0 rgba(0,0,255,0.75);}
-            99% {text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
-                         0.05em 0 0 rgba(0,255,0,0.75),
-                         0 -0.05em 0 rgba(0,0,255,0.75);}
-            100% {text-shadow: -0.025em 0 0 rgba(255,0,0,0.75),
-                         -0.025em -0.025em 0 rgba(0,255,0,0.75),
-                         -0.025em -0.05em 0 rgba(0,0,255,0.75);}
-        }
-        
-        .hacker-alias {
-            font-size: 3.5rem;
-            color: #00ff41;
-            text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
-            margin: 1rem 0;
-            letter-spacing: 3px;
-            font-family: 'Courier New', monospace;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;}
-            50% {text-shadow: 0 0 15px #00ff41, 0 0 30px #00ff41, 0 0 40px #00ff41;}
-            100% {text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;}
-        }
-        
-        .message {
-            background: rgba(0, 0, 0, 0.7);
-            border: 2px solid #00ff41;
-            border-radius: 10px;
-            padding: 25px;
-            margin: 30px auto;
-            max-width: 800px;
-            font-size: 1.2rem;
-            line-height: 1.6;
-            box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
-        }
-        
-        .hack-gif {
-            margin: 30px auto;
-            max-width: 400px;
-            border: 2px solid #00ff41;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.7);
-            overflow: hidden;
-        }
-        
-        .hack-gif img {
-            width: 100%;
-            display: block;
-        }
-        
-        .signature {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 2.5rem;
-            color: #ff003c;
-            margin-top: 20px;
-            text-shadow: 0 0 5px rgba(255, 0, 60, 0.8);
-        }
-        
-        .team {
-            font-size: 2rem;
-            color: #ffcc00;
-            margin: 15px 0;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
-        }
-        
-        .matrix-rain {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            opacity: 0.3;
-        }
-        
-        .social-icons {
-            margin-top: 30px;
-        }
-        
-        .social-icons a {
-            display: inline-block;
-            margin: 0 15px;
-            font-size: 2.5rem;
-            color: #00ff41;
-            transition: all 0.3s;
-            text-decoration: none;
-        }
-        
-        .social-icons a:hover {
-            color: #ff003c;
-            transform: scale(1.2);
-            text-shadow: 0 0 15px #ff003c;
-        }
-        
-        .hacked-info {
-            margin-top: 20px;
-            font-size: 1.1rem;
-            color: #aaa;
-        }
-        
-        .terminal {
-            background: rgba(0, 0, 0, 0.8);
-            border: 1px solid #00ff41;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 30px auto;
-            max-width: 700px;
-            text-align: left;
-            font-family: 'Courier New', monospace;
-            font-size: 1.1rem;
-            color: #00ff41;
-            box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .terminal::before {
-            content: "root@omega777:~#";
-            color: #ffcc00;
-            margin-right: 10px;
-        }
-        
-        .terminal-text {
-            display: inline;
-        }
-        
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 1.2rem;
-            background: #00ff41;
-            margin-left: 5px;
-            animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-            0%, 100% {opacity: 1;}
-            50% {opacity: 0;}
-        }
-        
-        .cyber-grid {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
-            background-size: 30px 30px;
-            pointer-events: none;
-            z-index: 0;
-        }
-        
         .footer {
-            margin-top: 40px;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(0, 255, 65, 0.3);
-        }
-        
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .glitch-effect {
-                font-size: 3rem;
-            }
-            
-            .hacker-alias {
-                font-size: 2.5rem;
-            }
-            
-            .team {
-                font-size: 1.5rem;
-            }
-            
-            .message {
-                padding: 15px;
-                font-size: 1rem;
-            }
-            
-            .hack-gif {
-                max-width: 90%;
-            }
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div class="matrix-rain" id="matrix"></div>
-    <div class="cyber-grid"></div>
-    
     <div class="container">
-        <div class="glitch-effect">you have been hacked</div>
-        <div class="hacker-alias">Hacked by Omega777</div>
-        <div class="team">Terminal 404</div>
+        <h1>@OMEGA404</h1>
         
-        <div class="message">
-            <p>This system has been compromised for low security reasons hahaha</p>
-        </div>
-        
-        <!-- GIF ADICIONADO AQUI -->
-        <div class="hack-gif">
-            <img src="https://i.gifer.com/5N2g.gif" alt="Hacking Animation">
-        </div>
-        
-        <div class="terminal">
-            <span class="terminal-text">root@omega777:~# ./exploit --target Ômega777 --- you have been hacked </span><span class="cursor"></span>
-        </div>
-        
-        <div class="signature">- Omega777</div>
-        
-        <div class="social-icons">
-            <a href="#" title="GitHub">&#xf09b;</a>
-            <a href="#" title="Twitter">&#xf099;</a>
-            <a href="#" title="Instagram">&#xf16d;</a>
-            <a href="#" title="Telegram">&#xf2c6;</a>
-        </div>
-        
-        <div class="hacked-info">
-        
-        </div>
-        
+        <pre>
+System: Linux
+Web Server: Apache
+IP: [REDACTED]
+        </pre>
+
+        <hr style="border-color: #0f0;">
+
+        <h2>PWNED BY OMEGA404</h2>
+        <p><strong>Sistema violado!</strong></p>
+
+        <p>
+            Esta página foi alterada como forma de demonstração técnica.<br>
+            Nenhum sistema é seguro quando a segurança é negligenciada.
+        </p>
+
+        <p>
+            <em>
+                "Vocês dominam os sistemas, nós os testamos.<br>
+                Vocês escondem vulnerabilidades, nós as revelamos."
+            </em>
+        </p>
+
         <div class="footer">
         </div>
     </div>
-
-    <script>
-        // Matrix rain effect
-        function createMatrix() {
-            const matrix = document.getElementById('matrix');
-            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@%&*';
-            const fontSize = 14;
-            const columns = Math.floor(window.innerWidth / fontSize);
-            
-            const drops = [];
-            for (let i = 0; i < columns; i++) {
-                drops[i] = 1;
-            }
-            
-            function draw() {
-                const ctx = document.createElement('canvas').getContext('2d');
-                ctx.canvas.width = window.innerWidth;
-                ctx.canvas.height = window.innerHeight;
-                matrix.appendChild(ctx.canvas);
-                
-                function rain() {
-                    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-                    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-                    
-                    ctx.fillStyle = '#00ff41';
-                    ctx.font = fontSize + 'px monospace';
-                    
-                    for (let i = 0; i < drops.length; i++) {
-                        const text = characters.charAt(Math.floor(Math.random() * characters.length));
-                        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                        
-                        if (drops[i] * fontSize > ctx.canvas.height && Math.random() > 0.975) {
-                            drops[i] = 0;
-                        }
-                        
-                        drops[i]++;
-                    }
-                }
-                
-                setInterval(rain, 33);
-            }
-            
-            draw();
-        }
-        
-        // Set current date
-        function setDate() {
-            const now = new Date();
-            const options = { day: '2-digit', month: 'long', year: 'numeric' };
-            const formattedDate = now.toLocaleDateString('pt-BR', options);
-            document.getElementById('current-date').textContent = formattedDate;
-        }
-        
-        // Initialize effects
-        window.addEventListener('DOMContentLoaded', () => {
-            createMatrix();
-            setDate();
-        });
-    </script>
 </body>
 </html>
